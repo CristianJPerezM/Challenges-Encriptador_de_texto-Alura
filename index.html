@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador De Texto</title>
+    <link rel="shortcut icon" href="img/icon-encryption-key.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="logo">
+        <h1>Alura</h1>
+        <h3>Latam</h3>
+    </div>
+
+    <div class="contenedor">
+        <div class="encriptar">
+            <textarea class="texto" name="texto" id="texto" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div class="regla">
+                <img src="img/bi_exclamation-circle-fill.png" alt="Signo de admiración (!)" id="sg-admiracion">
+                <p>Solo letras minúsculas y sin acéntos.</p>
+            </div>
+            <div class="botones">
+                <button class="boton-encriptar" type="button" onclick="encriptar()">Encriptar</button>
+                <button class="boton-desencriptar" type="button" onclick="desencriptar()">Desencriptar</button>
+            </div>
+
+        </div>
+        <div class="encriptado">
+            <img src="img/Muñeco.png" alt="Muñeco investigando" id="muñeco">
+            <div class="mensaje-encriptado" id="mensaje-encriptado">
+                <h2 class="titulo-mensaje" id="titulo-mensaje">Ningún mensaje encontrado</h2>
+                <p class="texto-parrafo" id="texto-parrafo">Ingresa el texto a encriptar o desencriptar</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>Desarrollado por <strong>Cristian Pérez</strong></p>
+            <p>|</p>
+            <p><span class="material-symbols-outlined">mail</span> <a mailto="cristianjpm@outlook.com">cristianjpm@outlook.com</a></p>
+            <p>|</p> 
+            <p>&copy Copyright <script>document.write(new Date().getFullYear())</script></p>
+        </footer>
+    </div>
+</body>
+<script src="index.js"></script>
+</html>

@@ -1,0 +1,248 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    background:  rgb(227, 227, 227);
+}
+
+.logo{
+    flex-direction: row;
+    position: relative;
+    align-items: center;
+    padding: 0;
+    height: auto;
+    width: 140px;
+    left: 3%;
+    top: 1%;
+    gap: 3px;
+    border-radius: 10px;
+    background: rgba(125, 147, 247, 0.438);
+}
+
+h1, h3{
+    display: inline;
+}
+
+.logo h1{
+    font-family: 'Times New Roman',;
+    font-style: normal;
+    font-size: 30px;
+    line-height: 150%;
+    margin-left: 6%;
+    color: rgb(70, 70, 140);
+}
+
+.logo h3{
+    flex-direction: row;
+    align-items: flex-start;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-size: 15px;
+    margin: 0;
+    color: black;
+    text-align: center;
+}
+
+.contenedor{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: rgb(227, 227, 227);
+}
+
+.texto{
+    resize: none;
+    position: absolute;
+    width: 45%;
+    height: 60%;
+    left: 10%;
+    top: 5%;
+    border: none;
+    font-family: 'Times New Roman',;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 150%;
+    background-color: rgb(227, 227, 227);
+}
+
+.texto::placeholder{
+    color: rgb(50, 50, 165);
+}
+
+.texto:focus, .texto:active{
+    border: none;
+    outline: none;
+}
+
+.regla{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    gap: 4px;
+    position: absolute;
+    width: 80%;
+    left: 10%;
+    top: 70%;
+}
+
+.regla img{
+    width: 16px;
+    height: 16px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.regla p{
+    font-family: 'Times New Roman';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: rgb(56, 65, 95);
+    opacity: 0.9;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.botones{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    height: auto;
+    width: 80%;
+    left: 10%;
+    top: 72%;
+    gap: 20px;
+}
+
+.boton-encriptar{
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    gap: 10px;
+    width: 25%;
+    background-color: rgb(64, 64, 156);
+    border-radius: 10px;
+    font-family: 'Times New Roman';
+    font-size: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: rgb(227, 227, 227);
+}
+
+.boton-desencriptar{
+    display: flex;
+    padding: 2%;
+    gap: 10px;
+    width: 25%;
+    border-radius: 10px;
+    border: 1px solid rgb(83, 83, 214);
+    flex-direction: row;
+    align-items: flex-start;
+    box-sizing: border-box;
+    align-items: flex-start;
+    background: rgb(114, 113, 145);
+    font-family: 'Times New Roman';
+    justify-content: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+}
+
+.boton-encriptar:hover, .boton-desencriptar:hover{
+    margin: 0.5%;
+    width: 24%;
+    padding: 1.5%;
+}
+
+.encriptado{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 30%;
+    height: 90%;
+    left: 65%;
+    top: auto;
+    background: rgba(125, 147, 247, 0.438);
+    box-shadow: 0px 25px 35px -10px rgba(0, 0, 0, 1);
+    border-radius: 20px;
+}
+
+.encriptado img{
+    position: absolute;
+    height: 50%;
+    width: 80%;
+    top: 15%;
+}
+
+.mensaje-encriptado{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    gap: 20px;
+    width: 100%;
+    top: 70%;
+    text-align: center;
+}
+
+.mensaje-encriptado h2{
+    width: 60%;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    text-align: center;
+    color: rgb(13, 21, 32);
+}
+
+.mensaje-encriptado p{
+    width: 80%;
+    font-family: 'Times New Roman';
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 150%;
+    text-align: center;
+    color: rgb(17, 33, 54);
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    position: relative;
+    top: 90%;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    left: 3rem;
+    gap: 1rem;
+    padding: 0;
+    
+}
+
+footer p {
+    display: inline-flex;
+    gap: 0.3rem;
+    font-size: 0.875rem;
+    color: rgb(51, 45, 45);
+}
+
+footer strong {
+    font-weight: 700;
+}
